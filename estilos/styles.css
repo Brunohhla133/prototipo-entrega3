@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    width: 100vw;
+    background-color: black; 
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+/* NavBar Start*/
+.container-fluid button{
+    background-color: #FFBD59;
+    color: hsla(36, 3%, 30%, 0.911);
+}
+.navbar{
+    width: 100%;
+    background-color: hsla(36, 3%, 30%, 0.911);
+    z-index: 1;
+    position: fixed;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+    text-shadow:0 0 5px #e68b14;
+    margin: 20px;
+}
+
+.nav-link:hover{
+    color: #FFD194;
+} 
+/* NavBar End */
+
+/* Jumbotron Start */
+.jumbotron{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(12\).png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.jumbotron h1{
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+    text-align: center;
+    font-size: 30px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-color: hsla(36, 3%, 30%, 0.911);
+    background-size: cover;
+    background-position: center;
+    color: #FFBD59;
+    text-shadow: 0 0 5px black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 5px solid #FFBD59;
+}
+/* Jumbotron End */
+
+/* Carrusell */
+.carousel-slide{
+    height: auto;
+}
+/* Main */
+
+main {
+    width: 100vw;
+    overflow: hidden;
+    padding: 10px;
+}    
+    h2{
+    width: 70%;
+    display: block;
+    margin: 50px auto;
+    background-color: #FFBD59;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid orange;
+    padding: 5px;
+    box-shadow: inset 0 0 10px orange;
+
+}
+.item{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.conteiner-items:hover{
+    box-shadow: 1px 1px 10px 1px#FFBD59;
+}
+
+.item img{
+    width: 100%;
+    transition: all .5s;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 10px 1px#FFBD59;
+}
+.item:hover img{
+    transform: scale(1.1);
+}
+
+.info-product h4{
+    background-color: #FFBD59;
+    border: 5px solid orange;
+    font-size: 30px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-product h3{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    margin-top:20px;
+    border-radius: 1px;
+}
+
+p.old-price{
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+    text-decoration: line-through;
+}
+
+
+p.price {
+    background-color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px;
+}
+
+.button{
+    background-color: hsla(36, 3%, 70%, 0.466);
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all .5s;
+    border: 3px solid orange;
+}
+
+
+.button button{
+    font-weight:bold;
+    text-transform:uppercase;
+    color:aliceblue;
+    font-size: 20px;
+    background: none;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left:none;
+    padding: 1px;
+    margin: 2px;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+/*Footer*/
+
+footer{
+    background-color: hsla(36, 3%, 30%, 0.911);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+footer p{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.redes a{
+    color: #FFD194;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media  screen and (width < 600px) {
+    footer{
+        width: 100%;
+    }
+    .p-5.jumbotron{
+        width: max-content;
+    }
+    h2{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    .item{
+        width: 100%;
+    }
+}
